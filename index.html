@@ -3,57 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Tarini Yadav | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <img src="image.png" alt="image" height="100" alt="Tarini Yadav Banner">
-    </header>
+    <div class="container">
+        <header>
+            <img src="image.png" height="100" alt="Tarini Yadav Banner">
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </header>
     
-    <main>
-        <h1>Name - Tarini Yadav</h1>
-
-        <p>"I am a final-year <b>Bachelor of Computer Applications (BCA) </b>student with a strong passion for frontend web development. I love <b>building clean, interactive, and mobile-friendly user interfaces,</b> and I am currently sharpening my skills in <b>HTML, CSS, and modern web technologies."</b></p>
-
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor of Computer Application - Final Year</li>
-                <li>Anant College, Shaheed Nandkumar Patel University Raigarh</li>
-            </ul>
-        </section>    
-
-        <section>
-            <h2>Technical Skills</h2>
-            <h3>Programming & Core Concepts</h3>
-            <ul>
-                <li>Core Java | SQL | Operating System | Software Engineering</li>
-            </ul>
-        
-            <h3>Web Development</h3>
-            <ul>
-                <li>Html | CSS | Javascript </li>
-            </ul>
-        
-            <h3>Creative Skills</h3>
-            <ul>
-                <li>Social Media Designing</li>
-            </ul>
-        </section>
-
-
-        <footer>
-            <p>Email : tariniyadavtarini23@gmail.com</p>
-
-            <a href="mailto:tariniyadavtarini23@gmail.com">Send Email</a>
+        <main>
+            <h2>Name - Tarini Yadav</h2>
             <br>
+            <section id="summary" class="grid-item">
+                <h3>Summary:</h3>
+                <blockquote>Hello! I’m <b>Tarini</b>, a recent <b>BCA</b> graduate with a strong passion for<b> frontend web development.</b> 💻✨
 
-            <a href="https://www.linkedin.com/in/tarini-y-66a10a315/">LinkedIn</a>
-        </footer>
+                I specialize in building <b>clean, interactive, and mobile-friendly</b> user interfaces using <b>HTML, CSS, and JavaScript.</b> I enjoy combining my technical background with a creative eye for <b>social media design</b>, leveraging tools like Canva to craft engaging visual experiences. 🎨📱
 
-    </main>
-    
+                I am always eager to apply my <b>problem-solving skills </b>to <b>real-world projects</b> and continue growing as a <b>developer.</b> Let’s connect! 🚀</blockquote>
+            </section>
+
+            <section id="education">
+                <h3>Education:</h3>
+                <ul>
+                    <li><strong>Bachelor of Computer Application | </strong> Anant College Raigarh Chhattisgarh</li> 
+                    <li>Affiliated with Shaheed Nandkumar Patel University</li> 
+                    <li>Duration: 2023 - 2026</li> 
+                    <li>Percentage - 69.80%</li>
+                </ul>
+            </section>    
+
+            <section id="technical-skills">
+                <h3>Technical Skills:</h3>
+                <h3>Programming & Core Concepts:</h3>
+                <ul>
+                    <li><span>Core Java</span></li>
+                    <li><span>Tomcat 9</span></li>
+                    <li><span>Servlet</span></li>
+                    <li><span>JDBC</span></li>
+                    <li><span>MySQL</span></li>
+                    <li><span>C++</span></li>
+                    <li><span>DSA</span></li>
+                    <li><span>Operating System</span></li>
+                    <li><span>Software Engineering</span></li>
+                </ul>
+            
+                <h3>Web Development:</h3>
+                <ul>
+                    <li><span>Html</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>Javascript</span></li>
+                </ul>
+            
+                <h3>Creative Skills:</h3>
+                <ul>
+                    <li><span>Social Media Designing - Canva</span></li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h3>Projects:</h3>
+                <div class="project-card">
+                <p><b>Project Name - [SocialMediaPlanner]</b><br> <b>Overview: </b>Developed a robust and scalable SocialMediaPlanner, a full-stack web application designed to streamline social media management. This project addresses the core challenge of fragmented content planning by providing a centralized dashboard for scheduling, organizing, and managing cross-platform content. <br><br><b>The Vision: </b>I observed that individuals and small teams often struggle to maintain consistency across multiple social media channels, leading to inefficient workflows and missed engagement opportunities. The vision behind SocialMediaPlanner was to eliminate this friction by creating an intuitive, all-in-one productivity tool. My goal was to empower users to manage their entire content lifecycle from media organization to automated scheduling and performance tracking—within a single, unified interface.<br><br><b>Tech Stack: </b>Java | Servlets | JDBC | Tomcat 9 | MySQL | HTML5 | CSS | JavaScript.</p>
+
+                <div class="project-gallery">
+                    <div class="img-container">
+                    <img src="screenshot1.png" alt="SocialMediaPlanner Scheduling Dashboard" class="project-img" height="100">
+                    <p class="img-caption"><b>Caption: </b>User Interface Design: A clean and intuitive dashboard for scheduling social media posts efficiently.</p>
+                    </div>
+                    
+                    <div class="img-container">
+                    <img src="screenshot3.png" alt="SocialMediaPlanner interface displaying validation error for past date scheduling" class="project-img" height="100">
+                    <p class="img-caption"><b>Caption: </b>Input Validation: Implementing logical checks to ensure data integrity by restricting invalid entries like past-date scheduling.</p>
+                    </div>
+
+                    <div class="img-container">
+                    <img src="screenshot2.png" alt="SocialMediaPlanner interface with sample Twitter post data" class="project-img" height="100">
+                    <p class="img-caption"><b>Caption: </b>Content Submission: Demonstrating the scheduling process by inputting post details for future-dated publication.</p>
+                    </div>
+                    
+                    <div class="img-container">
+                    <img src="screenshot4.png" alt="SocialMediaPlanner dashboard showing scheduled posts with delete functionality" class="project-img" height="100">
+                    <p class="img-caption"><b>Caption: </b>Integrated Content Dashboard: A centralized view for scheduling new posts and managing existing entries via a database-linked table.</p>
+                    </div>
+
+                    <div class="img-container">
+                    <img src="screenshot5.png" alt="SocialMediaPlanner Scheduled Posts table close-up, highlighting functional 'Delete' button in the Action column." class="project-img" height="100">
+                    <p class="img-caption"><b>Caption: </b>Data Management: Viewing scheduled posts with real-time options to delete entries from the database.</p>
+                    </div>
+                </div>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><span><b>Content Scheduling Dashboard: </b>A user-friendly interface that allows users to create and schedule posts for specific dates and times.</span></li>
+                    <li><span><b>Multi-Platform Integration: </b>Support for managing and previewing content across different social media platforms from a single location.</span></li>
+                    <li><span><b>Media Management System: </b>An intuitive way for users to upload, store, and organize images or videos to be used in their social media posts.</span></li>
+                    <li><span><b>Analytics Overview: </b>A feature that tracks engagement metrics, helping users understand which posts perform best with their audience.</span></li>
+                    <li><span><b>Post Previewer: </b>A functional UI component that shows users exactly how their post will look before it is officially published.</span></li>
+                </ul>
+                </div>
+            </section>   
+
+            <footer>
+                <h3>Links</h3>
+                <p>Email : tariniyadavtarini23@gmail.com</p>
+                <a href="mailto:tariniyadavtarini23@gmail.com">Send Email</a>
+                <br>
+                <a href="https://www.linkedin.com/in/tarini-y-66a10a315/" target="_blank">LinkedIn</a>
+                <br>
+                <a href="https://tarini-codes.github.io/my-portfolio/" target="_blank">Github</a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

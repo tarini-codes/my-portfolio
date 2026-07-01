@@ -1,0 +1,141 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 15px;             
+    margin-bottom: 30px;
+}
+
+body{
+
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container h2 { text-align: center; }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-card{
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media(max-width: 768px){
+    nav ul{
+
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .portfolio-section{
+        padding: 20px;
+    }
+}
+
+.skill-tag, .project-card {
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+body.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+footer a {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+body.dark-mode footer a {
+    color: #4da6ff;
+    text-decoration: underline;
+}
+
+body.dark-mode footer p {
+    color: #cccccc; 
+}
+
+body.dark-mode footer a:hover {
+    color: #ffffff;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-container {
+    width: 300px; 
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.05); 
+}
+
+.img-caption {
+    font-size: 0.85rem;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+body.dark-mode .img-container {
+    background-color: #252525;
+    border: 1px solid #444;
+}
+
+body.dark-mode .img-caption {
+    color: #bbb;
+}
