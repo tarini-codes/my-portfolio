@@ -139,3 +139,22 @@ body.dark-mode .img-container {
 body.dark-mode .img-caption {
     color: #bbb;
 }
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.video-container h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
