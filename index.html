@@ -19,11 +19,11 @@
             <br>
             <section id="summary" class="grid-item">
                 <h3>Summary:</h3>
-                <blockquote>Hello! I’m <b>Tarini</b>, a recent <b>BCA</b> graduate with a strong passion for<b> frontend web development.</b> 💻✨
+                <blockquote>Hello! I’m <b>Tarini</b>, a recent <b>BCA</b> graduate and aspiring <b>backend developer</b>. 💻
 
-                I specialize in building <b>clean, interactive, and mobile-friendly</b> user interfaces using <b>HTML, CSS, and JavaScript.</b> I enjoy combining my technical background with a creative eye for <b>social media design</b>, leveraging tools like Canva to craft engaging visual experiences. 🎨📱
+                    I build secure REST-based web applications using <b>Java, Spring Boot, Spring Security and PostgreSQL</b>, and I deploy them live using <b>Docker and Render</b>. I also practice <b>Data Structures and Algorithms</b> daily and enjoy solving real-world problems.
 
-                I am always eager to apply my <b>problem-solving skills </b>to <b>real-world projects</b> and continue growing as a <b>developer.</b> Let’s connect! 🚀</blockquote>
+                    I am looking for an <b>SDE Trainee / Backend Developer</b> role where I can learn from experienced engineers. Let’s connect! 🚀</blockquote>
             </section>
 
             <section id="education">
@@ -31,7 +31,7 @@
                 <ul>
                     <li><strong>Bachelor of Computer Application | </strong> Anant College Raigarh Chhattisgarh</li> 
                     <li>Affiliated with Shaheed Nandkumar Patel University</li> 
-                    <li>Duration: Aug '2023 -  Sept '2026</li> 
+                    <li>Duration: August '2023 -  June '2026</li>
                 </ul>
             </section>    
 
@@ -40,14 +40,23 @@
                 <h3>Programming & Core Concepts:</h3>
                 <ul>
                     <li><span>Core Java</span></li>
-                    <li><span>Tomcat 9</span></li>
-                    <li><span>Servlet</span></li>
-                    <li><span>JDBC</span></li>
+                    <li><span>Spring Boot</span></li>
+                    <li><span>Rest APIs</span></li>
+                    <li><span>Spring Security</span></li>
+                    <li><span>JSON Web Token (JWT)</span></li>
+                    <li><span>PostgreSQL</span></li>
                     <li><span>MySQL</span></li>
+                    <li><span>Docker</span></li>
+                    <li><span>Git</span></li>
+                    <li><span>GitHub</span></li>
+                    <li><span>Spring Data JPA</span></li>
+                    <li><span>JDBC</span></li>
+                    <li><span>SQL</span></li>
+                    <li><span>Python</span></li>
                     <li><span>C++</span></li>
-                    <li><span>DSA</span></li>
-                    <li><span>Operating System</span></li>
-                    <li><span>Software Engineering</span></li>
+                    <li><span>Postman</span></li>
+                    <li><span>Swagger</span></li>
+                    <li><span>Data Structures And Algorithms</span></li>
                 </ul>
             
                 <h3>Web Development:</h3>
@@ -66,43 +75,169 @@
             <section id="projects">
                 <h3>Projects:</h3>
                 <div class="project-card">
-                <p><b>Project Name - [SocialMediaPlanner]</b><br> <b>Overview: </b>Developed a robust and scalable SocialMediaPlanner, a full-stack web application designed to streamline social media management. This project addresses the core challenge of fragmented content planning by providing a centralized dashboard for scheduling, organizing, and managing cross-platform content. <br><br><b>The Vision: </b>I observed that individuals and small teams often struggle to maintain consistency across multiple social media channels, leading to inefficient workflows and missed engagement opportunities. The vision behind SocialMediaPlanner was to eliminate this friction by creating an intuitive, all-in-one productivity tool. My goal was to empower users to manage their entire content lifecycle from media organization to automated scheduling and performance tracking—within a single, unified interface.<br><br><b>Tech Stack: </b>Java | Servlets | JDBC | Tomcat 9 | MySQL | HTML5 | CSS | JavaScript.</p>
+                    <h4>SocialMediaPlanner</h4>
+                    <p><b>Overview:</b> A full-stack Spring Boot application to schedule, manage and automatically publish social media posts, with user authentication, post ownership enforcement, a background scheduler and live publishing through the Telegram Bot API.</p>
 
-                <div class="project-gallery">
-                    <div class="img-container">
-                    <img src="screenshot1.png" alt="SocialMediaPlanner Scheduling Dashboard" class="project-img" height="100">
-                    <p class="img-caption"><b>Caption: </b>User Interface Design: A clean and intuitive dashboard for scheduling social media posts efficiently.</p>
+                    <p><b>The Vision:</b> Individuals and small teams often struggle to stay consistent across social media channels. I built SocialMediaPlanner to give them one place to plan and schedule their posts.</p>
+
+                    <h4>Features</h4>
+                    <ul>
+                        <li><b>User authentication:</b> Spring Security form login with BCrypt password hashing.</li>
+                        <li><b>Post ownership enforcement:</b> users can view, edit, delete or publish only their own posts, enforced on the server.</li>
+                        <li><b>Automated scheduling:</b> a background @Scheduled job checks every 30 seconds and publishes due posts automatically.</li>
+                        <li><b>Live Telegram publishing:</b> scheduled Telegram posts are sent through the Telegram Bot API.</li>
+                        <li><b>Multi-platform support:</b> posts can be tagged for LinkedIn, Twitter, Instagram, Telegram or Facebook. Telegram has live publishing; the others are supported in the UI and data model for future extension.</li>
+                        <li><b>Input validation:</b> request-level validation (@NotBlank, @Size) with clear field-level error messages.</li>
+                        <li><b>Centralized exception handling:</b> a global @ControllerAdvice shows a friendly error page instead of a stack trace.</li>
+                        <li><b>Externalized secrets:</b> database credentials and the bot token come from environment variables.</li>
+                        <li><b>Platform filtering and pagination</b> on post history.</li>
+                    </ul>
+
+                    <h4>Tech Stack</h4>
+                    <table>
+                        <tr><th>Layer</th><th>Technology</th></tr>
+                        <tr><td>Language</td><td>Java 21</td></tr>
+                        <tr><td>Framework</td><td>Spring Boot</td></tr>
+                        <tr><td>Security</td><td>Spring Security, BCrypt</td></tr>
+                        <tr><td>Persistence</td><td>Spring Data JPA + Hibernate</td></tr>
+                        <tr><td>Database</td><td>PostgreSQL (Neon)</td></tr>
+                        <tr><td>Frontend</td><td>Thymeleaf, Bootstrap 5</td></tr>
+                        <tr><td>Integration</td><td>Telegram Bot API</td></tr>
+                        <tr><td>Deployment</td><td>Render (Docker)</td></tr>
+                        <tr><td>Build</td><td>Maven</td></tr>
+                    </table>
+
+                    <p>
+                        <a href="https://social-media-planner-6.onrender.com" target="_blank">Live Demo</a> |
+                        <a href="https://github.com/tarini-codes/social-media-planner" target="_blank">GitHub Repo</a>
+                    </p>
+
+                    <div class="project-gallery">
+                        <div class="img-container">
+                            <img src="register-page.png" alt="SocialMediaPlanner registration page" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Registration: every user creates their own account, with passwords stored using BCrypt hashing.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="login-page.png" alt="SocialMediaPlanner login page" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Login: form-based authentication handled by Spring Security.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="schedule-post.png" alt="Schedule New Post form with Telegram platform, caption and date-time selected" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Scheduling: choose a platform, write a caption and pick the exact date and time for automated posting.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="post-history.png" alt="Scheduled Posts History table showing a pending Telegram post with Publish, Edit and Delete actions" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Post history: each post shows its status and can be published, edited or deleted by its owner.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="telegram-published.png" alt="Telegram message received from the scheduled auto-post" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Live publishing: the background scheduler sent the post to Telegram automatically at the scheduled time.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="ownership-error.png" alt="Error page shown when a user tries to access a post they do not own" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Ownership protection: accessing another user's post is blocked on the server and shows a friendly error page.</p>
+                        </div>
                     </div>
-                    
-                    <div class="img-container">
-                    <img src="screenshot3.png" alt="SocialMediaPlanner interface displaying validation error for past date scheduling" class="project-img" height="100">
-                    <p class="img-caption"><b>Caption: </b>Input Validation: Implementing logical checks to ensure data integrity by restricting invalid entries like past-date scheduling.</p>
+            </div>
+
+                <div class="project-card">
+                    <h4>Spring Boot Login Demo: Secure Authentication System</h4>
+                    <p><b>Overview:</b> A secure REST API built with Spring Boot featuring JWT-based stateless authentication, role-based access control and brute-force protection. It started as a basic login/register demo and was extended step by step into a security-focused API, deployed live on Render.</p>
+
+                    <h4>Features</h4>
+                    <ul>
+                        <li><b>Password security:</b> BCrypt hashing; passwords are never stored or logged in plain text.</li>
+                        <li><b>Spring Security:</b> endpoint-level access control with a custom SecurityFilterChain.</li>
+                        <li><b>JWT authentication:</b> stateless signed tokens issued on login, with no server-side sessions.</li>
+                        <li><b>Role-based authorization:</b> USER and ADMIN roles; roles are always assigned server-side, never by the client.</li>
+                        <li><b>Input validation:</b> @Valid, @NotBlank and @Size with clean, structured error responses.</li>
+                        <li><b>Centralized exception handling:</b> a global @RestControllerAdvice so no stack traces reach the client.</li>
+                        <li><b>Brute-force protection:</b> account locks for 5 minutes after 5 failed login attempts.</li>
+                        <li><b>Externalized secrets:</b> database credentials and the JWT secret come from environment variables.</li>
+                        <li><b>Interactive API docs</b> with OpenAPI / Swagger UI.</li>
+                    </ul>
+
+                    <h4>API Endpoints</h4>
+                    <table>
+                        <tr><th>Method</th><th>Endpoint</th><th>Access</th></tr>
+                        <tr><td>POST</td><td>/api/register</td><td>Public</td></tr>
+                        <tr><td>POST</td><td>/api/login</td><td>Public (returns JWT)</td></tr>
+                        <tr><td>GET</td><td>/api/profile</td><td>Authenticated</td></tr>
+                        <tr><td>GET</td><td>/api/admin/dashboard</td><td>ADMIN only</td></tr>
+                    </table>
+
+                    <h4>Tech Stack</h4>
+                    <table>
+                        <tr><th>Layer</th><th>Technology</th></tr>
+                        <tr><td>Language</td><td>Java 21</td></tr>
+                        <tr><td>Framework</td><td>Spring Boot</td></tr>
+                        <tr><td>Security</td><td>Spring Security, JJWT</td></tr>
+                        <tr><td>Persistence</td><td>Spring Data JPA + Hibernate</td></tr>
+                        <tr><td>Database</td><td>PostgreSQL (Neon)</td></tr>
+                        <tr><td>API Docs</td><td>springdoc-openapi (Swagger UI)</td></tr>
+                        <tr><td>Deployment</td><td>Render (Docker)</td></tr>
+                        <tr><td>Build</td><td>Maven</td></tr>
+                    </table>
+
+                    <p>
+                        <a href="https://spring-boot-login-demo.onrender.com" target="_blank">Live Demo</a> |
+                        <a href="https://spring-boot-login-demo.onrender.com/swagger-ui/index.html" target="_blank">Swagger API Docs</a> |
+                        <a href="https://github.com/tarini-codes/spring-boot-login-demo" target="_blank">GitHub Repo</a>
+                    </p>
+                    <p><i>Hosted on a free tier, so the first load can take 1-2 minutes.</i></p>
+
+                    <div class="project-gallery">
+                        <div class="img-container">
+                            <img src="swagger-ui-overview.png" alt="Swagger UI documentation for the authentication API" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>API documentation: interactive Swagger UI generated from the codebase.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="register-success-201.png" alt="Successful registration returning 201 Created" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Registration: a new user is created successfully (201 Created).</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="register-duplicate-409.png" alt="Registration with an existing username returning 409 Conflict" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Duplicate username: registration is rejected with 409 Conflict.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="login-success-200.png" alt="Successful login returning a JWT token" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Login: valid credentials return a signed JWT (200 OK).</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="login-wrong-password-401.png" alt="Login with wrong password returning 401 Unauthorized" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Wrong password: login fails with 401 Unauthorized.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="login-user-not-found-404.png" alt="Login with unknown user returning 404 Not Found" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Unknown user: login fails with 404 Not Found.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="login-locked-423.png" alt="Account locked after 5 failed login attempts returning 423 Locked" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Brute-force protection: the account is locked after 5 failed attempts (423 Locked).</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="profile-unauthorized-401.png" alt="Accessing the profile endpoint without a token returning 401 Unauthorized" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Protected route: accessing the profile endpoint without a token returns 401 Unauthorized.</p>
+                        </div>
+
+                        <div class="img-container">
+                            <img src="admin-dashboard-access.png" alt="Admin dashboard accessed with a valid ADMIN token returning 200 OK" class="project-img" height="100">
+                            <p class="img-caption"><b>Caption: </b>Role-based access: the admin dashboard opens with a valid ADMIN token (200 OK).</p>
+                        </div>
                     </div>
 
-                    <div class="img-container">
-                    <img src="screenshot2.png" alt="SocialMediaPlanner interface with sample Twitter post data" class="project-img" height="100">
-                    <p class="img-caption"><b>Caption: </b>Content Submission: Demonstrating the scheduling process by inputting post details for future-dated publication.</p>
-                    </div>
-                    
-                    <div class="img-container">
-                    <img src="screenshot4.png" alt="SocialMediaPlanner dashboard showing scheduled posts with delete functionality" class="project-img" height="100">
-                    <p class="img-caption"><b>Caption: </b>Integrated Content Dashboard: A centralized view for scheduling new posts and managing existing entries via a database-linked table.</p>
-                    </div>
-
-                    <div class="img-container">
-                    <img src="screenshot5.png" alt="SocialMediaPlanner Scheduled Posts table close-up, highlighting functional 'Delete' button in the Action column." class="project-img" height="100">
-                    <p class="img-caption"><b>Caption: </b>Data Management: Viewing scheduled posts with real-time options to delete entries from the database.</p>
-                    </div>
-                </div>
-
-                <h3>Key Features:</h3>
-                <ul>
-                    <li><span><b>Content Scheduling Dashboard: </b>A user-friendly interface that allows users to create and schedule posts for specific dates and times.</span></li>
-                    <li><span><b>Multi-Platform Integration: </b>Support for managing and previewing content across different social media platforms from a single location.</span></li>
-                    <li><span><b>Media Management System: </b>An intuitive way for users to upload, store, and organize images or videos to be used in their social media posts.</span></li>
-                    <li><span><b>Analytics Overview: </b>A feature that tracks engagement metrics, helping users understand which posts perform best with their audience.</span></li>
-                    <li><span><b>Post Previewer: </b>A functional UI component that shows users exactly how their post will look before it is officially published.</span></li>
-                </ul>
                 </div>
 
                 <div class="video-container">
@@ -124,7 +259,7 @@
                 <br>
                 <a href="https://www.linkedin.com/in/tarini-yadav/" target="_blank">LinkedIn</a>
                 <br>
-                <a href="https://tarini-codes.github.io/my-portfolio/" target="_blank">Github</a>
+                <a href="https://github.com/tarini-codes" target="_blank">GitHub</a>
             </footer>
         </main>
     </div>
