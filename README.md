@@ -28,3 +28,11 @@ HTML, CSS and JavaScript, hosted on GitHub Pages. Features a dark mode toggle an
 ## Contact
 - [LinkedIn](https://www.linkedin.com/in/tarini-yadav/)
 - [GitHub](https://github.com/tarini-codes)
+
+## Certifications
+- HackerRank Software Engineer Intern (Role Certification): Problem Solving and SQL, Oct 2026
+- Datacom Software Development Job Simulation (Forage), Nov 2026
+- Baby's First Website Hackathon (Unstop), Participation, Nov 2026
+
+## Other Projects
+- Mochi Portfolio: https://github.com/tarini-codes/mochi-portfolio
